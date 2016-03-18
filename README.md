@@ -18,7 +18,7 @@ cd www
 live-server --port=8081
 ```
 
-Visit localhost:8081 in a browser.
+Visit localhost:8081 in a browser. And choose if you want to test with the kurento-utils library or without it.
 
 ### Test on iOS device
 
@@ -41,4 +41,5 @@ If you have everything up and running. You'll notice that:
 * Being a presenter on Firefox and a viewer in Firefox does work
 * Being a presenter on iOS and a viewer in iOS does NOT work
 
+It does not matter if you use kurento-utils library or you don't both give the same issue.
 Hopefully someone can tackle this issue.

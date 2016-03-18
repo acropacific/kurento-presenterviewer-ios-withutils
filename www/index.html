@@ -1,25 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="js/ios-websocket-hack.js"></script>
-    <script src="cordova.js"></script>
-    <script src="adapter.js"></script>
-    <script src="bower_components/kurento-utils/js/kurento-utils.js"></script>
-  </head>
-  <body>
-    <div>
-      <button id="call">Presenter</button>
-      <button id="viewer">Viewer</button>
-      <button id="terminate">Stop</button>
-    </div>
-    <hr>
-    Presenter:<br/>
-    <video id="videoPresenter" autoplay style="width: 100%; max-height: 600px"></video>
-    <hr>
-    Viewer:<br/>
-    <video id="videoViewer" autoplay style="width: 100%; max-height: 600px"></video>
-    <script src="js/index.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="cordova.js"></script>
+</head>
+<body>
+<div>
+  <button id="withutils" onclick="window.location.href='withutils.html'">WITH kurento utils</button>
+  <button id="withoututils" onclick="window.location.href='withoututils.html'">WITHOUT kurento utils</button>
+</div>
+</body>
 </html>

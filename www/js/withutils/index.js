@@ -1,4 +1,4 @@
-var host = 'localhost'; // the domain or IP where the node server and kurento media server are running
+var host = '192.168.178.52'; // the domain or IP where the node server and kurento media server are running
 
 function deviceReady() {
   return new Promise(function(resolve, reject) {
@@ -28,7 +28,7 @@ deviceReady().then(function() {
 function stuff() {
 
   var ws = new WebSocket('ws://'+host+':8080/one2many');
-  var video;
+  var videoPresenter, videoViewer;
   var webRtcPeerViewer, webRtcPeerPresenter;
 
   videoPresenter = document.getElementById('videoPresenter');
@@ -167,6 +167,7 @@ function stuff() {
       sendMessage(message);
       dispose();
     }
+    window.location.href = 'index.html';
   }
 
   function dispose() {
@@ -183,5 +184,10 @@ function stuff() {
   function sendMessage(message) {
     var jsonMessage = JSON.stringify(message);
     ws.send(jsonMessage);
+  }
+
+  function onError(err) {
+    console.error(err);
+    throw err
   }
 }
