@@ -43,3 +43,6 @@ If you have everything up and running. You'll notice that:
 
 It does not matter if you use kurento-utils library or you don't both give the same issue.
 Hopefully someone can tackle this issue.
+Some Google Group discussions about this:
+[Kurento Google Group](https://groups.google.com/d/msg/kurento/7isKmw3zH_Y/jHqu3mBNGQAJ)
+[iosrtc Google Group](https://groups.google.com/forum/#!topic/cordova-plugin-iosrtc/LXAxyw0x2Wo)
