@@ -1,4 +1,4 @@
-var host = '192.168.178.52'; // the domain or IP where the node server and kurento media server are running
+var host = '192.168.178.28'; // the domain or IP where the node server and kurento media server are running
 
 function deviceReady() {
   return new Promise(function(resolve, reject) {
@@ -119,13 +119,11 @@ function stuff() {
     };
 
     deviceReady().then(function() {
-      if (isDevice('iOS')) {
-        options.connectionConstraints = {
-          offerToReceiveAudio: true,
-          offerToReceiveVideo: true
-        };
-      }
-
+      /*
+      *  We do not have to set connection constraints when we apply PR:
+      *  https://github.com/eface2face/cordova-plugin-iosrtc/pull/119
+      *  to the cordova-plugin-iosrtc...
+      */
       webRtcPeerViewer = kurentoUtils.WebRtcPeer.WebRtcPeerRecvonly(options, function(error) {
         if(error) return onError(error);
         this.generateOffer(onOfferViewer);

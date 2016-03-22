@@ -1,4 +1,4 @@
-var host = '192.168.178.52'; // the domain or IP where the node server and kurento media server are running
+var host = '192.168.178.28'; // the domain or IP where the node server and kurento media server are running
 
 function deviceReady() {
   return new Promise(function(resolve, reject) {

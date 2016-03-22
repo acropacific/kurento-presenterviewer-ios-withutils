@@ -46,3 +46,8 @@ Hopefully someone can tackle this issue.
 Some Google Group discussions about this:
 [Kurento Google Group](https://groups.google.com/d/msg/kurento/7isKmw3zH_Y/jHqu3mBNGQAJ)
 [iosrtc Google Group](https://groups.google.com/forum/#!topic/cordova-plugin-iosrtc/LXAxyw0x2Wo)
+
+### Solution to the issue
+
+Apply pull request https://github.com/eface2face/cordova-plugin-iosrtc/pull/119 to the cordova-plugin-iosrtc and
+re-build. Now all should work.
