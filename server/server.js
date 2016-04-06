@@ -317,14 +317,6 @@ function clearCandidatesQueue(sessionId) {
 
 function stop(sessionId) {
   if (presenter !== null && presenter.id == sessionId) {
-    for (var i in viewers) {
-      var viewer = viewers[i];
-      if (viewer.ws) {
-        viewer.ws.send(JSON.stringify({
-          id : 'stopCommunication'
-        }));
-      }
-    }
     presenter.pipeline.release();
     presenter = null;
     viewers = [];
