@@ -11,7 +11,7 @@ Open ./www/index.js and set line 1 `var host = ` to the ip/domain where kms and 
 
 ### Test in browser
 
-Serve ./www/index.html
+Serve ./www/index.html. Don't forget to install bower dependencies: `bower install`.
 
 ```sh
 cd www
@@ -51,3 +51,4 @@ Some Google Group discussions about this:
 
 Apply pull request https://github.com/eface2face/cordova-plugin-iosrtc/pull/119 to the cordova-plugin-iosrtc and
 re-build. Now all should work.
+Note that we have included an adjusted version of iosrtc to this project that already includes this PR.
