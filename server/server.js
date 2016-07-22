@@ -9,7 +9,6 @@ var argv = minimist(process.argv.slice(2), {
     default: {
         as_uri: 'http://localhost:8080/',
         ws_uri: 'ws://192.168.178.234:8888/kurento'
-        //ws_uri: 'wss://cluster.elasticrtc.com/apikey'
     }
 });
 
